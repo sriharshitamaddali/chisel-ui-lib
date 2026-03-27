@@ -1,0 +1,89 @@
+.textBox {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.small {
+  font-size: 12px;
+  padding: 7px 10px;
+}
+
+.large {
+  font-size: 15px;
+  padding: 13px 16px;
+}
+
+.label {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  color: var(--chisel-text-primary);
+}
+
+.inputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  padding: 10px 14px;
+  border: 1.5px solid var(--chisel-border-default);
+  border-radius: 4px;
+  width: 100%;
+  font-family: 'Nunito', sans-serif;
+  color: var(--chisel-text-primary);
+  background-color: var(--chisel-bg-default);
+
+  &:focus {
+    outline: none;
+    border-color: var(--chisel-primary);
+    box-shadow: 0 0 0 2px rgba(100, 149, 237, 0.3);
+  }
+
+  &:disabled {
+    background-color: var(--chisel-bg-disabled);
+    border-color: var(--chisel-border-disabled);
+    color: var(--chisel-text-disabled);
+    cursor: not-allowed;
+  }
+}
+
+.characterCount {
+  color: var(--chisel-text-secondary);
+  text-align: right;
+  position: absolute;
+  pointer-events: none;
+  right: 10px;
+  font-family: monospace;
+  font-size: 11px;
+}
+
+.error {
+  border-color: var(--chisel-error);
+  box-shadow: 0 0 0 2px var(--chisel-error-shadow);
+
+  &:focus {
+    border-color: var(--chisel-error);
+    box-shadow: 0 0 0 2px var(--chisel-error-shadow);
+  }
+}
+
+.errorText {
+  font-size: 12px;
+  font-family: 'Nunito', sans-serif;
+  color: var(--chisel-error-text);
+}
+
+.helperText {
+  font-size: 12px;
+  font-family: 'Nunito', sans-serif;
+  color: var(--chisel-text-secondary);
+}
+
+.readonly {
+  background-color: var(--chisel-bg-default);
+  border-color: var(--chisel-border-default);
+  color: var(--chisel-text-primary);
+  cursor: default;
+}

@@ -1,0 +1,60 @@
+.chip {
+  display: inline-flex;
+  align-items: center;
+  font-family: Nunito, sans-serif;
+  font-weight: 600;
+  border-radius: 18px;
+}
+
+.default {
+  background-color: var(--chisel-chip-background-default);
+  color: var(--chisel-chip-text-default);
+  border: 1px solid var(--chisel-chip-border-default);
+
+  &:hover { 
+    border-color: var(--chisel-chip-border-default-hover); 
+  }
+}
+
+.outlined {
+  background-color: transparent;
+  color: var(--chisel-chip-text-outlined);
+  border: 1.5px solid var(--chisel-border-outlined);
+
+  &:hover { 
+    border-color: var(--chisel-chip-border-outlined-hover); 
+  }
+}
+
+.small {
+  font-size: 11px;
+  padding: 4px 10px;
+}
+
+.medium {
+  font-size: 13px;
+  padding: 6px 14px;
+}
+
+.removeButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  min-width: 16px;    /* ← add this */
+  min-height: 16px;   /* ← add this */
+  flex-shrink: 0;     /* ← add this — prevents compression */
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  font-size: 11px;
+  padding: 0;
+  margin-left: 4px;
+  background: transparent;
+  color: var(--chisel-text-secondary);
+  transition: background 0.15s, color 0.15s;
+  &:hover {
+    color: var(--chisel-text-primary);
+  }
+}

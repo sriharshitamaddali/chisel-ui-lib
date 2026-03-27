@@ -1,0 +1,22 @@
+npm warn cli npm v11.11.0 does not support Node.js v18.19.1. This version of npm supports the following node versions: `^20.17.0 || >=22.9.0`. You can find the latest version at https://nodejs.org/.
+npm error code ERESOLVE
+npm error ERESOLVE unable to resolve dependency tree
+npm error
+npm error While resolving: @sriharshitamaddali/chisel@1.0.0
+npm error Found: storybook@7.6.24
+npm error node_modules/storybook
+npm error   dev storybook@"7.6.24" from the root project
+npm error
+npm error Could not resolve dependency:
+npm error peer storybook@"^10.3.3" from eslint-plugin-storybook@10.3.3
+npm error node_modules/eslint-plugin-storybook
+npm error   dev eslint-plugin-storybook@"*" from the root project
+npm error
+npm error Fix the upstream dependency conflict, or retry
+npm error this command with --force or --legacy-peer-deps
+npm error to accept an incorrect (and potentially broken) dependency resolution.
+npm error
+npm error
+npm error For a full report see:
+npm error /Users/harshitamaddali/.npm/_logs/2026-03-26T04_34_30_584Z-eresolve-report.txt
+npm error A complete log of this run can be found in: /Users/harshitamaddali/.npm/_logs/2026-03-26T04_34_30_584Z-debug-0.log

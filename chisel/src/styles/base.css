@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&display=swap');
+
+:root {
+    --chisel-font: 'Nunito', sans-serif;
+}
+
+[data-theme='light'] {
+    --chisel-btn-primary-bg: #111110;
+    --chisel-btn-primary-color: #ffffff;
+    --chisel-btn-primary-hover-color: #888;
+
+    --chisel-btn-secondary-bg: transparent;
+    --chisel-btn-secondary-color: #111110;
+    --chisel-btn-secondary-border: #ccc;
+    --chisel-btn-secondary-hover-color: #888;
+    --chisel-btn-secondary-hover-border: #aaa;
+
+    --chisel-btn-tertiary-color: #aaa;
+    --chisel-btn-tertiary-hover-color: #888;
+
+    --chisel-btn-disabled-opacity: 0.3;
+
+    --chisel-text-primary: #111110;
+    --chisel-text-secondary: #666;
+    --chisel-border-default: #ccc;
+    --chisel-bg-default: #fff;
+    --chisel-primary: #6495ed;
+    --chisel-error: #e74c3c;
+    --chisel-error-text: #c0392b;
+    --chisel-error-shadow: rgba(231, 76, 60, 0.25);
+    
+    --chisel-chip-background-default: #f5f4f0;
+    --chisel-chip-text-default: #111110;
+    --chisel-chip-border-default: #e0ddd6;
+
+    --chisel-chip-text-outlined: #111110;
+    --chisel-border-outlined: #ccc;
+
+    --chisel-chip-border-default-hover: #bbb;
+    --chisel-chip-border-outlined-hover: #888;
+}
+
+[data-theme='dark'] {
+    --chisel-btn-primary-bg: #ffffff;
+    --chisel-btn-primary-color: #111110;
+    --chisel-btn-primary-hover-color: #888;
+
+    --chisel-btn-secondary-bg: transparent;
+    --chisel-btn-secondary-color: #f0ede6;
+    --chisel-btn-secondary-border: #444;
+    --chisel-btn-secondary-hover-color: #aaa;
+    --chisel-btn-secondary-hover-border: #888;
+
+    --chisel-btn-tertiary-color: #666;
+    --chisel-btn-tertiary-hover-color: #aaa;
+
+    --chisel-btn-disabled-opacity: 0.3;
+
+    --chisel-text-primary: #f0ede6;
+    --chisel-text-secondary: #666;
+    --chisel-border-default: #444;
+    --chisel-bg-default: #111110;
+    --chisel-primary: #6495ed;
+    --chisel-error: #ff6b6b;
+    --chisel-error-text: #ff6b6b;
+    --chisel-error-shadow: rgba(255, 107, 107, 0.25);
+
+    --chisel-chip-background-default: #1e1e1c;
+    --chisel-chip-text-default: #f0ede6;
+    --chisel-chip-border-default: #333;
+
+    --chisel-chip-text-outlined: #f0ede6;
+    --chisel-border-outlined: #444;
+
+    --chisel-chip-border-default-hover: #666;
+    --chisel-chip-border-outlined-hover: #888;
+}

@@ -1,0 +1,72 @@
+.button {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  transition: background 0.22s, border-color 0.22s, color 0.22s;
+  border-radius: 5px;
+  display: inline-flex;    /* ← needed for icon + text alignment */
+  align-items: center;     /* ← vertically centers icon and text */
+  cursor: pointer;
+  border: none;            /* ← reset default browser border */
+  outline: none;           /* ← remove focus outline, consider adding custom focus styles for accessibility */
+
+  &.small {
+    padding: 7px 14px;
+    font-size: 12px;
+  }
+
+  &.medium {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+
+  &.large  {
+    padding: 13px 26px;
+    font-size: 15px;
+  }
+
+  &.primary {
+    background-color: var(--chisel-btn-primary-bg);
+    color: var(--chisel-btn-primary-color);
+    border: none;
+
+    &:hover {
+      color: var(--chisel-btn-primary-hover-color);
+    }
+  }
+
+  &.secondary {
+    background-color: var(--chisel-btn-secondary-bg);
+    color: var(--chisel-btn-secondary-color);
+    border: 1.5px solid var(--chisel-btn-secondary-border);
+    &:hover {
+      color: var(--chisel-btn-secondary-hover-color);
+      border-color: var(--chisel-btn-secondary-hover-border);
+    }
+  }
+
+  &.tertiary {
+    background-color: transparent;
+    color: var(--chisel-btn-tertiary-color);
+    border: none;
+    &:hover {
+      color: var(--chisel-btn-tertiary-hover-color);
+    }
+  }
+
+  
+  &:hover:not(:disabled) .inner {
+    transform: translateY(-2px);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: var(--chisel-btn-disabled-opacity);
+  }
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: transform 0.22s cubic-bezier(0.33, 1, 0.68, 1);
+}
