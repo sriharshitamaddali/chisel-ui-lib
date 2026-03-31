@@ -27,7 +27,7 @@ jobs:
           scope: "@sriharshitamaddali"
 
       - name: Install dependencies
-        run: npm install
+        run: npm install --include=dev
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
