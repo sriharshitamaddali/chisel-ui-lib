@@ -38,6 +38,10 @@
 
     --chisel-chip-border-default-hover: #bbb;
     --chisel-chip-border-outlined-hover: #888;
+    --chisel-theme-toggle-track-bg: #f0ede6;
+    --chisel-theme-toggle-knob-bg: #111110;
+
+    --chisel-theme-toggle-icon-color: #f0ede6; 
 }
 
 [data-theme='dark'] {
@@ -74,4 +78,9 @@
 
     --chisel-chip-border-default-hover: #666;
     --chisel-chip-border-outlined-hover: #888;
+
+    --chisel-theme-toggle-track-bg: #2a2a28;
+    --chisel-theme-toggle-knob-bg: #555; 
+
+    --chisel-theme-toggle-icon-color: #f0ede6;
 }

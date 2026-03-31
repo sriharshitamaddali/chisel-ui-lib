@@ -20,7 +20,7 @@ export default [
       postcss({
         // ← add this
         modules: true,
-        extract: false,
+        extract: 'index.css',
         minimize: true,
       }),
     ],
@@ -29,5 +29,6 @@ export default [
     input: "dist/index.d.ts",
     output: { file: "dist/index.d.ts", format: "esm" },
     plugins: [dts()],
+    external: [/\.css$/]
   },
 ];
