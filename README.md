@@ -52,7 +52,6 @@ Import Chisel's base CSS in your app entry point to get the default variable val
 ```tsx
 import '@sriharshitamaddali/chisel/dist/index.css'
 ```
-
 ---
 
 ## Components
