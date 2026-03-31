@@ -11,6 +11,9 @@ jobs:
     permissions:
       contents: write
       packages: write
+    defaults:
+      run:
+        working-directory: ./chisel
 
     steps:
       - name: Checkout
