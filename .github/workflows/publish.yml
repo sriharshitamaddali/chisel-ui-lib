@@ -57,6 +57,13 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ steps.generate-token.outputs.token }}
 
+      - name: Debug npmrc
+        run: cat ~/.npmrc
+
+      - name: Debug npmrc project
+        run: cat .npmrc
+        working-directory: ./chisel
+
       - name: Publish
         run: npm publish
         env:
