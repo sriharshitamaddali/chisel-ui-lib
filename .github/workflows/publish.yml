@@ -35,7 +35,7 @@ jobs:
           node-version: "20"
           registry-url: "https://npm.pkg.github.com"
           scope: "@sriharshitamaddali"
-      
+
       - name: Configure npm auth
         run: |
           echo "@sriharshitamaddali:registry=https://npm.pkg.github.com" > ~/.npmrc
