@@ -35,6 +35,11 @@ jobs:
           node-version: "20"
           registry-url: "https://npm.pkg.github.com"
           scope: "@sriharshitamaddali"
+      
+      - name: Configure npm auth
+        run: |
+          echo "@sriharshitamaddali:registry=https://npm.pkg.github.com" > ~/.npmrc
+          echo "//npm.pkg.github.com/:_authToken=${{ steps.generate-token.outputs.token }}" >> ~/.npmrc
 
       - name: Install dependencies
         run: npm install --include=dev
@@ -56,13 +61,6 @@ jobs:
           git push origin master
         env:
           GITHUB_TOKEN: ${{ steps.generate-token.outputs.token }}
-
-      - name: Debug npmrc
-        run: cat ~/.npmrc
-
-      - name: Debug npmrc project
-        run: cat .npmrc
-        working-directory: ./chisel
 
       - name: Publish
         run: npm publish
